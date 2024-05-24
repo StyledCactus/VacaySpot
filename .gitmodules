@@ -1,3 +1,3 @@
 [submodule "sandbox"]
-    path = sandbox
+    path = VacaySpot/.gitmodules
     url = https://github.com/StyledCactus/VacaySpot.git
