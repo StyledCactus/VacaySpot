@@ -11,7 +11,7 @@ function PricingPage() {
 
     const location = useLocation();
     const navigate = useNavigate();
-    const { checkInDate, checkOutDate, guestCount } = location.state ?? {};
+    const { checkInDate, checkOutDate} = location.state ?? {};
 
     const formatDate = (date) => {
         const d = new Date(date);
