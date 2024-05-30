@@ -46,7 +46,7 @@ function App() {
         if (sliderRef.current) {
             showSlide(currentIndex);
         }
-    }, [sliderRef.current]);
+    },);
 
     const calandarRef = useRef(null);
     const scrollToCalendar = () => {
