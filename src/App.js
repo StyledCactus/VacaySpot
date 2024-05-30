@@ -32,7 +32,7 @@ import PricingPage from './PricingPage';
 function App() {
 
     const sliderRef = useRef(null);
-    const [highlight, setHighlight] = useState(false);
+    const [highlight, setHighlight] = useState(false); //Hightlight is used for scroll
     const [checkInDate, setCheckInDate] = useState(() => {
         const saved = localStorage.getItem('checkInDate');
         return saved ? new Date(saved) : null;
@@ -49,11 +49,13 @@ function App() {
     },);
 
     const calandarRef = useRef(null);
-    const scrollToCalendar = () => {
-        calandarRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
-        setHighlight(true);
-        setTimeout(() => setHighlight(false), 2000);
-    };
+    // const scrollToCalendar = () => {
+    //     calandarRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    //     setHighlight(true);
+    //     setTimeout(() => setHighlight(false), 2000);
+    // };
+    //  ADD WHEN SCROLL IS FIXED
+
 
     const handleDateChange = (newCheckInDate, newCheckOutDate) => {
         if (newCheckInDate) {
@@ -169,12 +171,13 @@ function App() {
                 <div className="pricenit">
                     <h1>Price</h1>
                     <h2 className="nit">/Night</h2>
+                    <h2 className="scroltocal">(Scroll Down To Find Calander Select)</h2>
                 </div>
                 <div className="MainBox">
                     <div className="inbox">
                         <h2>CHECK-IN</h2>
                         <h2>{checkInDate ? checkInDate.toLocaleDateString() : 'No date selected'}</h2>
-                        <button className="dropres" onClick={scrollToCalendar}><img src={cancel} alt="cancel"/></button>
+                        {/* <button className="dropres" onClick={scrollToCalendar}><img src={cancel} alt="cancel"/></button> ADD WHEN SCROLL IS FIXED */}
                     </div>
                     <hr className="priceline"/>
                     <div className="outbox">

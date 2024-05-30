@@ -460,7 +460,14 @@ button {
   position: relative;
   left: 75px;
   bottom: 57px;
-
+}
+.scroltocal{
+  position: absolute;
+  bottom: 50px;
+  left: 180px;
+  font-weight: normal;
+  width: 79%;
+  font-size: 17px;
 }
 .Reservebutton{
   background-color: #33D76A;
