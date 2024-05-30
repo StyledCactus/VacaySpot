@@ -14,6 +14,7 @@
 }
 html, body{
   overflow-x: hidden;
+  overflow-y: auto;
   height: 100%;
 }
 
@@ -502,7 +503,7 @@ button {
  
 }
 .guests{
-  bottom: 70px;
+  bottom: 90px;
   position: relative;
 }
 .inbox{
@@ -526,7 +527,7 @@ button {
 }
 .dropres{
   left: 155px;
- top: 70px;
+ top: 50px;
 }
 .dropres img{
 position: relative;
@@ -536,7 +537,7 @@ position: relative;
 }
 .CounterContained{
   position: relative;
-  bottom: 130px;
+  bottom: 137px;
 }
 .Number{
   position: relative;
